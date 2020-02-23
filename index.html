@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slot Machine</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+  </head>
+
+  <body class="horizontal-flex">
+    <figure>
+      <img src="images/20904440.jpg" alt="Slot Machine">
+    </figure>
+
+    <div id="img1">
+      <img src="images/cherries.jpg" alt="cherries">
+    </div>
+    <div id="img2">
+      <img src="images/cherries.jpg" alt="cherries">
+    </div>
+    <div id="img3">
+      <img src="images/bar.png" alt="cherries">
+    </div>
+
+    <div class="vertical-flex">
+
+      <h1 class="text-primary">Slot Machine</h1>
+      <p>Spin to win money!</p>
+      <h4 id="moneyAmount" class="text-info"></h4>
+      <h4 id="multiplier" class="text-info"></h4>
+
+      <form action="#" onsubmit="checkBets();return false">
+        <div class="form-group">
+          <label for="wagerAmount">How much do you wager?</label>
+          <input type="number" class="form-control" id="wagerAmount">
+          <div id="message"></div>
+        </div>
+        <button id="letsBet" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </body>
+</html>
