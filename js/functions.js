@@ -37,8 +37,8 @@ function checkBets(){
       $("#moneyAmount").html(`Amount left: ${amountLeft}`);
       $("#multiplier").html(`Current multiplier: ${curMultiplier}`);
     }else{
-      amountLeft -= currentBet * curMultiplier;
-      $("#message").html(`<p class="text-warning"> You lost ${currentBet * curMultiplier} dollars</p>`);
+      amountLeft -= currentBet;
+      $("#message").html(`<p class="text-warning"> You lost ${currentBet} dollars</p>`);
       curMultiplier = Math.ceil(Math.random() * 10);
       $("#moneyAmount").html(`Amount left: ${amountLeft}`);
       $("#multiplier").html(`Current multiplier: ${curMultiplier}`);
